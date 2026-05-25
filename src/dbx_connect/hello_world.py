@@ -5,7 +5,7 @@ if __name__ == "__main__":
     spark = SparkSession.builder.appName("HelloWorldApp").getOrCreate()
 
     # Create a simple DataFrame
-    data = [(1, "Hello"), (2, "World")]
+    data = [(1, "Hello"), (2, "World"), (3, "from"), (4, "Databricks")]
     columns = ["id", "word"]
     df = spark.createDataFrame(data, columns)
 
