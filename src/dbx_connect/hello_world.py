@@ -10,7 +10,7 @@ if __name__ == "__main__":
     df = spark.createDataFrame(data, columns)
 
     # Show the DataFrame
-    df.show()
+    display(df)
 
     # Stop the Spark session
     spark.stop()
